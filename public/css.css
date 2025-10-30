@@ -1,0 +1,39 @@
+
+:root {
+    --background-color: #f8f9fa; /* Gris très clair */
+    --text-color: #212529;       /* Noir doux */
+    --primary-color: #0d6efd;    /* Bleu Bootstrap par défaut */
+    --secondary-color: #6c757d;  /* Gris secondaire */
+    --light-grey: #e9ecef;       /* Gris pour les bordures/fonds */
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.main-container {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+h1 {
+    border-bottom: 2px solid var(--light-grey);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Style pour que les images des cartes ne dépassent pas et gardent leurs proportions */
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Hauteur fixe pour l'uniformité */
+    object-fit: cover; /* Assure que l'image couvre la zone sans être déformée */
+}
+
+.thumbnail img {
+    max-width: 120px;
+    margin: 10px;
+}
